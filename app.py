@@ -1,4 +1,3 @@
-from concurrent.futures import process
 # cors para chamadas de outros domínios
 from flask_cors import CORS, cross_origin
 from flask import Flask, request       # flask para criar a aplicação
@@ -42,5 +41,4 @@ def upload_image():                                    # função de upload
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=process.env.PORT |
-            5000)                  # executa o app
+    app.run(host='0.0.0.0', port=5000)                       # executa o app
